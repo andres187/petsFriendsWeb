@@ -1,0 +1,23 @@
+<div>
+    <mat-card class="login">
+        <div class="center">
+            <img src="assets/images/logo.jpg" alt="Logo PetsFriends">
+        </div>
+      <h2>Inicia sesión</h2>
+      <h5>Hola socio.</h5>
+      <br>
+      <h1 *ngIf="cargando">cargando...</h1>
+  <form [formGroup]="formGroupUsuarioLogin" autocomplete="off" (submit)="login()" class="formLogin">
+  <mat-form-field>
+  <input matInput placeholder="Email" formControlName="email">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="password" placeholder="Contraseña" formControlName="password">
+  </mat-form-field>
+  <br>
+  <br>
+  <button type="submit"  mat-raised-button color="primary">Ingresar</button>
+  </form>
+    </mat-card>
+  </div>

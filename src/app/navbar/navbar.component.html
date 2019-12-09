@@ -1,0 +1,15 @@
+<div>
+        <mat-toolbar color="primary">
+          <mat-toolbar-row>
+            <span>Pets Friends</span>
+            <span class="menu-spacer"></span>
+            <div fxShow="true" fxHide.lt-md>
+              <a *ngIf="appComponent.autenticado" mat-button [routerLink]="['nueva']">+Servicio</a>
+              <a *ngIf="appComponent.autenticado" mat-button [routerLink]="['servicios']">Mis Servicios</a>
+              <a *ngIf="!appComponent.autenticado" mat-button [routerLink]="['']">Iniciar sesión</a>
+              <a *ngIf="!appComponent.autenticado" mat-button [routerLink]="['registro']">Registro</a>
+              <a *ngIf="appComponent.autenticado" mat-button [routerLink]="['logout']">Cerrar sesión</a>
+            </div>
+          </mat-toolbar-row>
+        </mat-toolbar>
+      </div>

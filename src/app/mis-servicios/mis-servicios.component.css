@@ -1,0 +1,9 @@
+.card-servicio{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.card{
+    margin:20px;
+}

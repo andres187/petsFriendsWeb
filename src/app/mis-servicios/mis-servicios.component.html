@@ -1,0 +1,13 @@
+<div>      
+<div *ngIf="resultado">
+    <mat-card><h2>Mis Servicios</h2></mat-card>
+    <mat-card class="card" *ngFor="let item of servicio">
+        <div class="card-servicio">
+            <h4>
+                {{item.titulo}}
+            </h4>
+            <span>Servicio: {{item.nombreServicio}}, Creado por: {{item.userName}}</span>
+        </div>
+    </mat-card>
+</div>
+</div>

@@ -1,0 +1,26 @@
+<mat-card class="login">
+        <form [formGroup]="formGroupRegistro" autocomplete="off" (submit)="registrar()" class="formLogin">
+    <mat-form-field>
+      <input matInput placeholder="Nit" formControlName="nit" maxlength="500">
+      <mat-error *ngIf="formGroupRegistro.get('nit').hasError('required')">
+        Campo requerido</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="Email (digite un correo)" formControlName="email" maxlength="500">
+      <mat-error *ngIf="formGroupRegistro.get('email').hasError('required')">
+        Campo requerido</mat-error>
+        <mat-error *ngIf="formGroupRegistro.get('email').hasError('email')">
+            Correo electronico invalido</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input type="password" matInput placeholder="Password" formControlName="password" maxlength="500">
+      <mat-error *ngIf="formGroupRegistro.get('password').hasError('required')">
+        Campo requerido</mat-error>
+    </mat-form-field>
+    <br>
+    <br>
+    <button type="submit"  mat-raised-button color="primary">Registrar</button>
+    </form>
+    </mat-card>

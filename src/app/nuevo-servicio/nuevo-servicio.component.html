@@ -1,0 +1,19 @@
+<mat-card class="login">
+        <h3>Crear un servicio</h3>
+        <br>
+        <h1 *ngIf="cargando">cargando...</h1>
+    <form [formGroup]="formGroupServicio" autocomplete="off" (submit)="crear()" class="formLogin">
+    <mat-form-field>
+    <input matInput placeholder="Nombre servicio" formControlName="titulo">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+    <mat-label>Selecciona un tipo</mat-label>
+    <mat-select [(value)]="servicioId" formControlName="servicioId">
+        <mat-option *ngFor="let item of serviciosData" value="{{item.id}}">{{item.titulo}}</mat-option>
+    </mat-select>
+    </mat-form-field>
+    <br>
+    <button type="submit"  mat-raised-button color="primary">Enviar</button>
+    </form>
+      </mat-card>
