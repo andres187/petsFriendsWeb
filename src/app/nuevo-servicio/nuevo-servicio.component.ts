@@ -14,6 +14,7 @@ export class NuevoServicioComponent implements OnInit {
   formGroupServicio;
   servicio: Servicio;
   serviciosData: Servicio[];
+  servicioId: 0;
 
   constructor(private formBuilder: FormBuilder,private router: Router, private service: ApiConsumerService) { }
 
