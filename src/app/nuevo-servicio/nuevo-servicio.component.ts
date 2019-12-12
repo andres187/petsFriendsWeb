@@ -42,7 +42,7 @@ export class NuevoServicioComponent implements OnInit {
         this.serviciosData = response;
         this.cargando = false;
       }else{
-        alert("No se encontraron resultados");
+        alert("No se encontraron resultados.");
       }
     },
     (error: any)=>{
