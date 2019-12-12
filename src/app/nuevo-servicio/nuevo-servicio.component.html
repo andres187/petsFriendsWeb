@@ -8,7 +8,7 @@
     </mat-form-field>
     <br>
     <mat-form-field>
-    <mat-label>Selecciona un tipo:</mat-label>
+    <mat-label>Selecciona un tipo</mat-label>
     <mat-select [(value)]="servicioId" formControlName="servicioId">
         <mat-option *ngFor="let item of serviciosData" value="{{item.id}}">{{item.titulo}}</mat-option>
     </mat-select>
