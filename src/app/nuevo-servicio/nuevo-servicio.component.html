@@ -8,12 +8,13 @@
     </mat-form-field>
     <br>
     <mat-form-field>
-    <mat-label>Selecciona un tipo</mat-label>
+        
+    <mat-label><span>Seleccione un servicio</span></mat-label>
     <mat-select [(value)]="servicioId" formControlName="servicioId">
         <mat-option *ngFor="let item of serviciosData" value="{{item.id}}">{{item.titulo}}</mat-option>
     </mat-select>
     </mat-form-field>
     <br>
-    <button type="submit"  mat-raised-button color="primary">Enviar</button>
+    <button type="submit"  mat-raised-button style="background: #f28f23;">Enviar</button>
     </form>
       </mat-card>

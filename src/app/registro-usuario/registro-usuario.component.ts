@@ -28,6 +28,7 @@ export class RegistroUsuarioComponent implements OnInit {
   iniciarFormularios() {
     this.formGroupRegistro = this.formBuilder.group({
       nit: ['', Validators.compose([Validators.required])],
+      empresa: ['', Validators.compose([Validators.required])],
       email: ['', Validators.compose([Validators.required, Validators.email])],
       password: ['', Validators.compose([Validators.required])]
     });

@@ -8,8 +8,8 @@ import { LogoutComponent } from './logout/logout.component';
 
 
 const routes: Routes = [
-  {path: '', component:LoginComponent},
   {path: 'registro', component:RegistroUsuarioComponent},
+  {path: '', component:LoginComponent},
   {path: 'nueva', component:NuevoServicioComponent},
   {path: 'servicios', component:MisServiciosComponent},
   {path: 'logout', component:LogoutComponent}
